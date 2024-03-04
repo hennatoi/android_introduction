@@ -1,4 +1,7 @@
 <resources>
-    <string name="person_name">Mi Businessman</string>
+    <string name="person_name">Mi Futurestar</string>
     <string name="person_title">Android Developer Trainee</string>
+    <string name="phone_number">+11 (123) 111 222 333</string>
+    <string name="contact_address">@AndroidDev</string>
+    <string name="email_address">mi.futurestar@android.com</string>
 </resources>
