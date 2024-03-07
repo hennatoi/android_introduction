@@ -49,28 +49,28 @@ fun ComposeQuadrantApp() {
         Row(Modifier.weight(1f)) {
             ComposableInfoCard(
                 title = stringResource(R.string.first_title),
-                description = stringResource(R.string.first_description),
-                backgroundColor = Color(0xFFEADDFF),
+                text = stringResource(R.string.first_text),
+                color = Color(0xFFEADDFF),
                 modifier = Modifier.weight(1f)
             )
             ComposableInfoCard(
                 title = stringResource(R.string.second_title),
-                description = stringResource(R.string.second_description),
-                backgroundColor = Color(0xFFD0BCFF),
+                text = stringResource(R.string.second_text),
+                color = Color(0xFFD0BCFF),
                 modifier = Modifier.weight(1f)
             )
         }
         Row(Modifier.weight(1f)) {
             ComposableInfoCard(
                 title = stringResource(R.string.third_title),
-                description = stringResource(R.string.third_description),
-                backgroundColor = Color(0xFFB69DF8),
+                text = stringResource(R.string.third_text),
+                color = Color(0xFFB69DF8),
                 modifier = Modifier.weight(1f)
             )
             ComposableInfoCard(
                 title = stringResource(R.string.fourth_title),
-                description = stringResource(R.string.fourth_description),
-                backgroundColor = Color(0xFFF6EDFF),
+                text = stringResource(R.string.fourth_text),
+                color = Color(0xFFF6EDFF),
                 modifier = Modifier.weight(1f)
             )
         }
@@ -80,14 +80,14 @@ fun ComposeQuadrantApp() {
 @Composable
 private fun ComposableInfoCard(
     title: String,
-    description: String,
-    backgroundColor: Color,
+    text: String,
+    color: Color,
     modifier: Modifier = Modifier
 ) {
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(backgroundColor)
+            .background(color)
             .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -98,7 +98,7 @@ private fun ComposableInfoCard(
             fontWeight = FontWeight.Bold
         )
         Text(
-            text = description,
+            text = text,
             textAlign = TextAlign.Justify
         )
     }
